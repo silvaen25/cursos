@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Como Tocar Violão - Curso Completo</title>
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/heroicons@1.0.6/outline/style.css" rel="stylesheet" />
   <style>
     :root {
       --primary: #1e3c72;
@@ -102,6 +103,13 @@
       transform: translateY(-5px);
     }
 
+    .benefits li::before {
+      content: "??";
+      font-size: 2em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
     .testimonial {
       background: white;
       padding: 25px;
@@ -138,18 +146,6 @@
       margin-bottom: 30px;
     }
 
-    .timer {
-      font-size: 2em;
-      background: #fff;
-      color: var(--secondary);
-      display: inline-block;
-      padding: 15px 25px;
-      border-radius: 15px;
-      font-weight: bold;
-      margin-bottom: 30px;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
-    }
-
     footer {
       background: #111;
       color: #aaa;
@@ -171,10 +167,6 @@
       .btn {
         width: 100%;
         display: inline-block;
-      }
-
-      .timer {
-        font-size: 1.5em;
       }
     }
   </style>
@@ -222,35 +214,12 @@
   <section class="cta" id="cta">
     <h2>Garanta Seu Acesso Agora</h2>
     <p>Comece hoje sua jornada musical com preço promocional por tempo limitado!</p>
-    
-    <!-- Temporizador -->
-    <div class="timer" id="countdown">Oferta termina em: 15:00</div>
-
     <a href="https://qifi.app/p/como-tocar-violao" target="_blank" class="btn">Comprar Agora</a>
   </section>
 
   <footer>
     © 2025 Como Tocar Violão. Todos os direitos reservados.
   </footer>
-
-  <script>
-    let totalTime = 15 * 60; // 15 minutos em segundos
-    const countdownEl = document.getElementById("countdown");
-
-    function updateCountdown() {
-      const minutes = Math.floor(totalTime / 60);
-      const seconds = totalTime % 60;
-      countdownEl.textContent = `Oferta termina em: ${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-      if (totalTime > 0) {
-        totalTime--;
-        setTimeout(updateCountdown, 1000);
-      } else {
-        countdownEl.textContent = "A oferta expirou!";
-      }
-    }
-
-    updateCountdown();
-  </script>
 
 </body>
 </html>
