@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Como Tocar Violão - Curso Completo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+  <link href="https://unpkg.com/heroicons@1.0.6/outline/style.css" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #1e3c72;
+      --secondary: #2a5298;
+      --accent: #ffd700;
+      --bg: #f5f5f5;
+      --text: #333;
+      scroll-behavior: smooth;
+    }
+
+    * {
+      margin: 0; padding: 0;
+      box-sizing: border-box;
+      font-family: 'Raleway', sans-serif;
+    }
+
+    body {
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 80px 20px;
+      text-align: center;
+      animation: fadeIn 1s ease;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 15px;
+    }
+
+    header p {
+      font-size: 1.2em;
+      margin-bottom: 25px;
+    }
+
+    .btn {
+      background: linear-gradient(45deg, #ffda44, #f3c200);
+      color: #000;
+      padding: 15px 35px;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 30px;
+      box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+      transition: all 0.3s ease-in-out;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
+      background: linear-gradient(45deg, #ffe770, #e0b800);
+    }
+
+    section {
+      padding: 60px 20px;
+      max-width: 1100px;
+      margin: 0 auto;
+    }
+
+    section h2 {
+      font-size: 2.5em;
+      margin-bottom: 30px;
+      text-align: center;
+      color: var(--primary);
+    }
+
+    .about p {
+      font-size: 1.1em;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .benefits ul {
+      list-style: none;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 25px;
+      padding: 0;
+    }
+
+    .benefits li {
+      background: white;
+      padding: 25px;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+      text-align: center;
+    }
+
+    .benefits li:hover {
+      transform: translateY(-5px);
+    }
+
+    .benefits li::before {
+      content: "??";
+      font-size: 2em;
+      display: block;
+      margin-bottom: 10px;
+    }
+
+    .testimonial {
+      background: white;
+      padding: 25px;
+      border-left: 6px solid var(--secondary);
+      margin-bottom: 20px;
+      border-radius: 12px;
+      font-style: italic;
+      box-shadow: 0 0 10px rgba(0,0,0,0.06);
+    }
+
+    .testimonial strong {
+      display: block;
+      margin-top: 10px;
+      font-style: normal;
+      color: var(--primary);
+    }
+
+    .cta {
+      background: var(--secondary);
+      color: white;
+      text-align: center;
+      padding: 80px 20px;
+      border-top-left-radius: 40px;
+      border-top-right-radius: 40px;
+    }
+
+    .cta h2 {
+      font-size: 2.7em;
+      margin-bottom: 20px;
+    }
+
+    .cta p {
+      font-size: 1.1em;
+      margin-bottom: 30px;
+    }
+
+    footer {
+      background: #111;
+      color: #aaa;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9em;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @media (max-width: 600px) {
+      header h1 {
+        font-size: 2em;
+      }
+
+      .btn {
+        width: 100%;
+        display: inline-block;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Aprenda a Tocar Violão do Zero</h1>
+    <p>Mesmo que você nunca tenha pegado em um violão antes. Método simples, direto e comprovado!</p>
+    <a href="#cta" class="btn">Quero Começar Agora!</a>
+  </header>
+
+  <section class="about">
+    <h2>Sobre o Curso</h2>
+    <p>
+      O <strong>Curso “Como Tocar Violão”</strong> é ideal para iniciantes que querem aprender de forma rápida e divertida.
+      Com aulas práticas, você aprenderá acordes, batidas, dedilhados e muito mais para tocar suas músicas preferidas ainda neste mês!
+    </p>
+  </section>
+
+  <section class="benefits">
+    <h2>O Que Você Vai Aprender</h2>
+    <ul>
+      <li>Acordes básicos e avançados</li>
+      <li>Ritmos e batidas populares</li>
+      <li>Técnicas modernas de dedilhado</li>
+      <li>Como acompanhar qualquer música</li>
+      <li>Montagem de repertório</li>
+      <li>Dicas exclusivas para tocar melhor</li>
+    </ul>
+  </section>
+
+  <section class="testimonials">
+    <h2>Depoimentos de Alunos</h2>
+    <div class="testimonial">
+      <p>“Eu achava que violão era difícil, mas com esse curso em 2 semanas já estava tocando músicas!”</p>
+      <strong>– Lucas Mendes</strong>
+    </div>
+    <div class="testimonial">
+      <p>“Fácil, direto ao ponto e divertido. Um método que realmente funciona. Valeu cada centavo.”</p>
+      <strong>– Ana Carolina</strong>
+    </div>
+  </section>
+
+  <section class="cta" id="cta">
+    <h2>Garanta Seu Acesso Agora</h2>
+    <p>Comece hoje sua jornada musical com preço promocional por tempo limitado!</p>
+    <a href="https://qifi.app/p/como-tocar-violao" target="_blank" class="btn">Comprar Agora</a>
+  </section>
+
+  <footer>
+    © 2025 Como Tocar Violão. Todos os direitos reservados.
+  </footer>
+
+</body>
+</html>
